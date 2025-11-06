@@ -5,7 +5,7 @@ const AuthTopLogo = () => {
     <>
       <div className="logo d-flex align-items-center gap-3">
         <img 
-          src="/colored-logo.png?v=2" 
+          src="/img/core-img/logo.png" 
           alt="CrowdWave Logo" 
           style={{ 
             height: '50px',
