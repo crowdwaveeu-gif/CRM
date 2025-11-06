@@ -5,7 +5,7 @@ import { getRevenueStats, RevenueStats } from '../../services/dataService';
 const RevenueChart = () => {
   const [stats, setStats] = useState<RevenueStats | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeDropdown, setActiveDropdown] = useState<boolean>(false);
+  // const [activeDropdown, setActiveDropdown] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstanceRef = useRef<ApexCharts | null>(null);
@@ -109,9 +109,9 @@ const RevenueChart = () => {
     };
   }, [loading, stats]);
 
-  const toggleDropdown = () => {
-    setActiveDropdown(!activeDropdown);
-  };
+  // const toggleDropdown = () => {
+  //   setActiveDropdown(!activeDropdown);
+  // };
 
   if (loading || !stats) {
     return (

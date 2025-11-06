@@ -73,11 +73,11 @@ const UsersManagementPage = () => {
   };
 
   // Handle create user
-  const handleCreateUser = () => {
-    setModalMode("create");
-    setSelectedUser(null);
-    setShowModal(true);
-  };
+  // const handleCreateUser = () => {
+  //   setModalMode("create");
+  //   setSelectedUser(null);
+  //   setShowModal(true);
+  // };
 
   // Handle edit user
   const handleEditUser = (user: User) => {

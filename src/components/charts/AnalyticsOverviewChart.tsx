@@ -14,7 +14,7 @@ const AnalyticsOverviewChart = () => {
   const [packageStats, setPackageStats] = useState<PackageStats | null>(null);
   const [tripStats, setTripStats] = useState<TripStats | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeDropdown, setActiveDropdown] = useState<boolean>(false);
+  // const [activeDropdown, setActiveDropdown] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstanceRef = useRef<ApexCharts | null>(null);
@@ -123,9 +123,9 @@ const AnalyticsOverviewChart = () => {
     };
   }, [loading, userStats, packageStats, tripStats]);
 
-  const toggleDropdown = () => {
-    setActiveDropdown(!activeDropdown);
-  };
+  // const toggleDropdown = () => {
+  //   setActiveDropdown(!activeDropdown);
+  // };
 
   if (loading || !userStats || !packageStats || !tripStats) {
     return (
