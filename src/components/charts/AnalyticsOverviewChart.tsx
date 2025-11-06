@@ -47,7 +47,7 @@ const AnalyticsOverviewChart = () => {
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
       ) {
-        setActiveDropdown(false);
+        // setActiveDropdown(false);
       }
     };
 
